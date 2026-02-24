@@ -8,9 +8,6 @@
 [Replugged]:        https://replugged.dev/
 [Vencord]:          https://vencord.dev/
 
-[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
-
 [release-css-gh]:     https://img.shields.io/github/downloads/Saltssaumure/synthesis-discord-theme/Synthesis.theme.css?color=purple&label=Downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/synthesis-discord-theme/net.saltssaumure.Synthesis.asar?color=purple&label=Downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/synthesis-discord-theme?label=Repository&style=flat-square
@@ -28,10 +25,6 @@
 [backgrounds]:      https://github.com/Saltssaumure/synthesis-discord-theme/tree/main/backgrounds
 
 # Synthesis Discord Theme
-[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![CSS GitHub downloads][release-css-gh]][release-css-gh]
-[![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
-[![Total repository size][shield-repo-size]][github]
 
 ***A vibrant neon synthwave Discord theme.***
 
