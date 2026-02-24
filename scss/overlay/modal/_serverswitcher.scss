@@ -1,0 +1,14 @@
+@use "../../top/vars" as *;
+
+// Ctrl + T Server switcher
+.input_f4e139 {
+    border-radius: $sidebar-spacing;
+}
+
+.result_f14193 {
+    border-radius: $item-spacing;
+
+    .wrapper_da9f92 {
+        border-radius: 10px;
+    }
+}

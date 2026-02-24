@@ -1,0 +1,62 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/tint";
+
+// Friends view
+// DM list
+.interactive_c91bad {
+    border-radius: $item-spacing;
+}
+
+// Active Now sidebar
+.nowPlayingColumn_c2739c {
+    position: relative;
+    margin: 0 $sidebar-spacing $sidebar-spacing 0;
+    height: auto;
+    @include box.orange;
+
+    .scroller_bf550a {
+        border: none;
+
+        .wrapper_cd82a7 {
+            border-width: 2px;
+            border-radius: $item-spacing;
+        }
+
+        .outer_c0f6a6.active_c0f6a6,
+        .outer_c0f6a6.interactive_c0f6a6:hover {
+            background-color: transparent;
+        }
+
+        .inset_c0f6a6 {
+            background-color: transparent;
+        }
+    }
+
+    &::after {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        border-radius: calc($sidebar-spacing - $sidebar-border-width);
+        @include tint.scanline-overlay();
+    }
+}
+
+// Status indicator
+.status__2a4a6 {
+    &[aria-label*="Online"] rect {
+        fill: var(--rs-online-color);
+    }
+
+    &[aria-label*="Idle"] rect {
+        fill: var(--rs-idle-color);
+    }
+
+    &[aria-label*="Do Not Disturb"] rect {
+        fill: var(--rs-dnd-color);
+    }
+
+    &[aria-label*="Streaming"] rect {
+        fill: var(--rs-streaming-color);
+    }
+}

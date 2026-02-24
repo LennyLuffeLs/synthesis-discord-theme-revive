@@ -1,0 +1,17 @@
+@use "../../../../top/vars" as *;
+@use "../../../../top/box";
+
+// Profiles
+#profile-customization-tab {
+    // Preview
+    .profileCustomizationPreview_ab876d {
+        @include box.blue;
+    }
+
+    // User/Server Profile tabs
+    .top_a0 .brand_a0.item_a0:hover,
+    .top_a0 .brand_a0.item_a0:active,
+    .top_a0 .brand_a0.selected_a0.item_a0 {
+        border-bottom-color: rgb($color-foreground);
+    }
+}

@@ -1,0 +1,27 @@
+@use "../top/vars" as *;
+
+// Inputs
+.inputDefault_f8bc55,
+// Dropdown selectors
+.select_f6639d,
+// Keybind recorders
+.container_c67e31 {
+    border-radius: $size-m;
+}
+
+// Toggles
+.container_cebd1c {
+    background-color: transparentize($color-toggle-off, 0.2) !important;
+
+    path {
+        fill: rgb($color-toggle-on) !important;
+    }
+}
+
+.checked_cebd1c {
+    background-color: transparentize($color-toggle-on, 0.3) !important;
+
+    path {
+        fill: rgb($color-toggle-on) !important;
+    }
+}

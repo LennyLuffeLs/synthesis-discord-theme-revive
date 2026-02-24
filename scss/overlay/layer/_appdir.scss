@@ -1,0 +1,29 @@
+@use "../../top/vars" as *;
+@use "../../top/tint";
+
+// App directory
+.layerContainer_cd0de5 .directoryModal-YJsOMv {
+    background: transparent;
+
+    // Scanline and tint overlay over whole view
+    &::after {
+        @include tint.scanline-overlay();
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
+        top: 0;
+        left: 0;
+    }
+
+    .category_fa8ebf,
+    .clickable_a97e58,
+    .search_aabd24,
+    .container_d9c848,
+    .card_e90143,
+    .commandName_e0307d,
+    .splashImage_b5d566,
+    .headerBanner_a1eac2 {
+        border-radius: $item-spacing;
+    }
+}

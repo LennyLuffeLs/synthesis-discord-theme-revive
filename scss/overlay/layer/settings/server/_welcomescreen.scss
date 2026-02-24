@@ -1,0 +1,7 @@
+@use "../../../../top/vars" as *;
+
+// Welcome Screen
+.previewContainer_dcd39d {
+    background-color: transparentize($color-button, 0.7);
+    border-radius: $sidebar-spacing;
+}

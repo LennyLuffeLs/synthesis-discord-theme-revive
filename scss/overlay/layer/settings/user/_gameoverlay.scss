@@ -1,0 +1,10 @@
+@use "../../../../top/vars" as *;
+
+// Game Overlay
+.wrapper_d2da9c {
+    border-radius: calc(2 * $item-spacing);
+
+    .option_d2da9c {
+        border-radius: $item-spacing;
+    }
+}

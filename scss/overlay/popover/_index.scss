@@ -1,0 +1,39 @@
+@forward "./emojipicker";
+@forward "./inbox";
+@forward "./menu";
+@forward "./pinned";
+@forward "./search";
+@forward "./selectfriends";
+@forward "./threads";
+@forward "./userprofile";
+
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+// Popovers
+.container_e664f3,
+// Threads
+.recentMentionsPopout_ddb5b4,
+// Inbox
+.messagesPopoutWrap_ac90a2,
+// Pinned messages
+.menu_d90b3d,
+// Account menu
+.container_eedf95.elevationBorderHigh_ff8688,
+// Search options
+.userPopoutOuter_c69a7b,
+// User profile
+.userProfileOuter_c69a7b,
+// Emoji picker
+.contentWrapper_af5dbb,
+// Emoji picker add reaction
+.contentWrapper_eab878,
+// User management add role selector
+.container_cbadbc,
+// View as role role selector
+.popoutContainer_cf58b5 // Emoji and role icon info
+{
+    @include box.blue;
+    overflow: hidden;
+    max-height: calc(100vh - 64px - $outmost-spacing) !important;
+}

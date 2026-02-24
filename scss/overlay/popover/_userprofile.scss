@@ -1,0 +1,92 @@
+@use "../../top/vars" as *;
+
+// Profile popout
+.userPopoutOuter_c69a7b {
+    position: relative;
+}
+.userPopoutInner_c69a7b {
+    max-height: calc(100vh - $outmost-spacing);
+
+    .banner_c3e427 {
+        mask-image: linear-gradient(black, black 60%, transparent);
+    }
+
+    .overlayBackground_c69a7b {
+        border-radius: $size-s;
+    }
+    .profileBadges_f89da9 {
+        border-radius: $size-s;
+    }
+    .role_f9575e {
+        border-radius: $size-s;
+        border: 0;
+    }
+    .messageInputContainer_f2c0a8 {
+        border: 0;
+    }
+}
+
+// View profile
+.avatarWrapper_f89da9 {
+    left: 27px;
+    top: 21px;
+
+    // View profile shadow
+    .avatarHint_f89da9 {
+        border-radius: 50px;
+
+        foreignObject {
+            mask: none;
+        }
+    }
+}
+
+// with Nitro theme
+.userProfileOuterThemed_c69a7b.userPopoutOuter_c69a7b,
+.userProfileOuterThemed_c69a7b.userProfileOuter_c69a7b {
+    padding: 0;
+}
+
+.userProfileOuterThemed_c69a7b {
+    overflow: hidden;
+
+    &.theme-light {
+        --channel-text-area-placeholder: rgb(#{$color-background} / 0.5);
+        :is(
+                .defaultColor_e9e35f,
+                .defaultColor__77578,
+                .userTagUsernameBase_c9ccf6,
+                .discordIcon__1e1be,
+                .textarea_dde0a8,
+                .input_f8bc55,
+                .customStatus__3aa7f,
+                :is(.activityProfile_d5089b, .activityProfileV2_d5089b, .activityUserPopout_d5089b, .activityUserPopoutV2_d5089b)
+                    :is(.activityName_d5089b, .content_d5089b, .details_d5089b, .name_d5089b, .nameNormal_d5089b, .nameWrap_d5089b),
+                .themed_aa267a .textLeft_aa267a,
+                .themed_aa267a .textRight_aa267a
+            ) {
+            color: rgb($color-background);
+        }
+    }
+
+    .userProfileInner_c69a7b {
+        max-height: calc(100vh - 64px - $outmost-spacing);
+
+        &::before {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: $sidebar-spacing;
+        }
+
+        .avatarPositionPremiumBanner_f89da9 {
+            left: 23px;
+            top: 77px;
+        }
+
+        .buttonColor_e36233 {
+            background-color: rgb($color-button);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../../../top/vars" as *;
+@use "../../../../top/box";
+
+// My Account
+.accountProfileCard_b69b77 {
+    @include box.blue;
+    background-color: transparentize($color-background, 0.3);
+
+    // Avatar
+    .avatar_b69b77 {
+        border: 0;
+        margin: 7px;
+    }
+}

@@ -1,0 +1,32 @@
+@use "../top/vars" as *;
+
+// DisplayServersAsChannels by DevilBro
+// BetterDiscord
+// https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/DisplayServersAsChannels
+
+.styledGuildsAsChannels-DNHtg_ {
+    .container_a4d4d9 {
+        &::before {
+            width: $channels-width + $channels-width + $sidebar-border-width;
+        }
+    }
+
+    .childWrapper_a6ce15 {
+        border-radius: $size-s;
+    }
+
+    .wrapper_fea3ef {
+        // Unread pill
+        .wrapper_fd07a3 {
+            transform: none;
+        }
+
+        .circleIconButton_db6521,
+        .expandedFolderBackground_bc7085 .folder_bc7085,
+        .guildsError__32e67,
+        .placeholderMask_f734d8,
+        .wrapper__8436d {
+            border-radius: $size-s;
+        }
+    }
+}

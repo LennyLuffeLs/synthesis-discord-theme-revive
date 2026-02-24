@@ -1,0 +1,15 @@
+@use "../../top/vars" as *;
+
+// Image upload
+.uploadModal_f82cc7 {
+    overflow: visible;
+
+    .icon_f82cc7 {
+        border-radius: $sidebar-spacing;
+    }
+
+    .footer_f82cc7 {
+        background-color: rgb($color-button);
+        box-shadow: none;
+    }
+}

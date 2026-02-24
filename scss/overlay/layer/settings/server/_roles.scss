@@ -1,0 +1,59 @@
+@use "../../../../top/vars" as *;
+
+// Roles
+#roles-tab {
+    // Role items
+    .container_cc7b67,
+    .roleRow_a930f1 {
+        border-radius: $sidebar-spacing;
+    }
+
+    // Edit role page
+    .page_e8251c {
+        // Role list
+        .sidebar_e87574 {
+            .titleContainer_e87574 {
+                padding-bottom: 0;
+            }
+
+            .scrollerBase_eed6a8 {
+                padding-top: 16px;
+            }
+        }
+
+        // Role details
+        .contentContainer_e8251c {
+            .header_bd05f1 {
+                background: linear-gradient($color-background 92%, transparent);
+                margin-left: -24px;
+                padding-left: 24px;
+            }
+
+            // Tabs
+            .top_a0 .brand_a0.item_a0:active,
+            .top_a0 .brand_a0.selected_a0.item_a0,
+            .top_a0 .brand_a0.item_a0:hover {
+                border-bottom-color: rgb($color-foreground);
+            }
+
+            // Role icon preview
+            .previewContainer_bdfce3 {
+                background: transparentize($color-pop, 0.5);
+
+                .preview_bdfce3 {
+                    color: rgb($color-pop);
+                }
+            }
+
+            // Role icon demo
+            .previewContainer_da1bd9 {
+                border-radius: $sidebar-spacing;
+            }
+
+            // Member with role item
+            .memberRow_fe3229 {
+                border-radius: $item-spacing;
+            }
+        }
+    }
+}

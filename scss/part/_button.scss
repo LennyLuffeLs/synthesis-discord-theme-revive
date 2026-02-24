@@ -1,0 +1,110 @@
+@use "../top/vars" as *;
+@use "../top/button";
+
+.appMount_ea7e65 {
+    $button-transparency: 0.3;
+    $button-disabled-transparency: 0.8;
+    $button-active-darken: 5;
+    // Secondary button
+    --button-secondary-background: #{transparentize($color-button, $button-transparency)};
+    --button-secondary-background-hover: #{rgb($color-button)};
+    --button-secondary-background-active: #{rgb($color-button)};
+    --button-secondary-background-disabled: #{transparentize($color-button, $button-disabled-transparency)};
+    // Positive button
+    --button-positive-background: #{transparentize($color-green, $button-transparency)};
+    --button-positive-background-hover: #{rgb($color-green)};
+    --button-positive-background-active: #{rgb($color-green)};
+    --button-positive-background-disabled: #{transparentize($color-green, $button-disabled-transparency)};
+    // Danger button
+    --button-danger-background: #{transparentize($color-red, $button-transparency)};
+    --button-danger-background-hover: #{rgb($color-red)};
+    --button-danger-background-active: #{rgb($color-red)};
+    --button-danger-background-disabled: #{transparentize($color-red, $button-disabled-transparency)};
+    // Outlined button
+    --button-outline-primary-text: #{rgb($color-text)};
+    --button-outline-primary-text-hover: #{rgb($color-text)};
+    --button-outline-primary-border: #{transparentize($color-button, $button-transparency)};
+    --button-outline-primary-border-hover: #{rgb($color-button)};
+    --button-outline-primary-background-hover: #{rgb($color-button)};
+
+    // Danger outlined button
+    --button-outline-danger-border: #{rgb($color-red)};
+    --button-outline-danger-border-hover: #{rgb($color-red)};
+    --button-outline-danger-border-active: #{rgb($color-red)};
+    --button-outline-danger-background-hover: #{rgb($color-red)};
+    --button-outline-danger-background-active: #{rgb($color-red)};
+    // Brand outlined button (default: blurple)
+    --button-outline-brand-border: #{rgb($color-button)};
+    --button-outline-brand-border-hover: #{rgb($color-button)};
+    --button-outline-brand-border-active: #{rgb($color-button)};
+    --button-outline-brand-background-hover: #{rgb($color-button)};
+    --button-outline-brand-background-active: #{rgb($color-button)};
+
+    // Buttons
+    .button_dd4f85,
+    .bd-button:not(.bd-addon-button),
+    .topPill_a0 .item_a0,
+    #bd-pub-button,
+    .streamerModeEnabledBtn_c50c8b,
+    .button__33db6 {
+        border-radius: 50px;
+    }
+
+    // More buttons
+    .lookFilled_dd4f85,
+    .lookOutlined_dd4f85,
+    .lookInverted_a299dc {
+        box-shadow: 0 0 5px 0 rgb($color-background);
+    }
+
+    .lookFilled_dd4f85.colorBrand_dd4f85 {
+        @include button.button($color-button);
+    }
+
+    .lookInverted_a299dc.colorBrand_dd4f85 {
+        @include button.button($color-text);
+    }
+
+    .bd-button,
+    #bd-pub-button {
+        @include button.button($color-button);
+    }
+
+    .bd-button.bd-button-danger {
+        @include button.button($color-red);
+    }
+
+    .circleIconButton_db6521.selected_db6521 {
+        @include button.button($color-green);
+    }
+
+    .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
+    .wrapper__8436d:hover .childWrapper_a6ce15 {
+        @include button.button($color-button);
+    }
+
+    .lookLink_dd4f85.colorLink_dd4f85 {
+        --text-link: #{rgb($color-text)};
+    }
+
+    .lookLink_dd4f85.colorPrimary_dd4f85 {
+        color: #{rgb($color-text)};
+    }
+
+    .buttonWhite_b105e9 {
+        border-color: transparentize($color-text, $button-transparency) !important;
+
+        &:hover,
+        &:active {
+            border-color: $color-text !important;
+        }
+    }
+
+    .streamerModeEnabledBtn_c50c8b {
+        @include button.button($color-twitch);
+    }
+
+    .button__292b6.tertiary_ad6d80:not(.disabled__4d064) {
+        @include button.button($color-button);
+    }
+}

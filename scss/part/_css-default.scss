@@ -1,0 +1,24 @@
+@use "../top/color" as *;
+
+// Defaults, can be overridden by .theme.css
+:root {
+    --synth-background-image:   url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif);
+    --synth-backdrop-opacity:   0.3;
+    --synth-overlay-color:      #{$gold};
+    --synth-crt-light:          #{$white};
+    --synth-crt-dark:           #{$black};
+    --synth-crt-flicker:        none;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
+
+    --synth-color-background:   #{$purple};
+    --synth-color-foreground:   #{$gold};
+    --synth-color-shadow:       #{$darkblue};
+    --synth-color-button:       #{$blue};
+    --synth-color-pop:          #{$pink};
+    --synth-color-blurple:      #{$blurple};
+    --synth-color-text:         #{$white};
+
+    --synth-color-red:          #{$red};
+    --synth-color-yellow:       #{$yellow};
+    --synth-color-green:        #{$green};
+    --synth-color-twitch:       #{$twitch};
+}

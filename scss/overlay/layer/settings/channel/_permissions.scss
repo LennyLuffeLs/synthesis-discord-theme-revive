@@ -1,0 +1,24 @@
+@use "../../../../top/vars" as *;
+
+// Channel permissions
+.group_e3c4bb {
+    border-radius: $item-spacing;
+    border: 2px solid rgb($color-foreground);
+    overflow: hidden;
+
+    // Denied permission
+    .deny_e3c4bb.selected_e3c4bb,
+    .passthrough_e3c4bb.selected_e3c4bb {
+        background-color: transparentize($color-red, 0.5);
+    }
+
+    // Neutral permission
+    .passthrough_e3c4bb.selected_e3c4bb {
+        background-color: transparentize($color-text, 0.5);
+    }
+
+    // Allowed permission
+    .allow_e3c4bb.selected_e3c4bb {
+        background-color: transparentize($color-green, 0.5);
+    }
+}
