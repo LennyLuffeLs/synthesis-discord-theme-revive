@@ -3,7 +3,7 @@
 @use "../top/box";
 
 // Servers sidebar
-.guilds_c48ade {
+.guilds__5e434 {
     margin: $sidebar-spacing;
     margin-right: 0;
     @include box.orange;
@@ -16,11 +16,11 @@
     // New messages pill
     $pill-height: 6px;
 
-    .item_fd07a3 {
+    .item__58105 {
         @include pill.unread($pill-height);
     }
 
-    .pill_e5445c:not(.bd-selected) .item_fd07a3 {
+    .pill_e5445c:not(.bd-selected) .item__58105 {
         height: calc(2 * $pill-height) !important;
 
         &[style="opacity: 1; height: 40px; transform: none;"] {

@@ -43,7 +43,7 @@
     // Buttons
     .button__201d5,
     .bd-button:not(.bd-addon-button),
-    .topPill_b3f026 .item_b3f026,
+    .topPill_aa8da2 .item_aa8da2,
     #bd-pub-button,
     .streamerModeEnabledBtn_aa3ffd,
     .button__33db6 {
@@ -67,7 +67,7 @@
 
     .bd-button,
     #bd-pub-button {
-        @include button.button($color-button);
+    @include button.button($color-button);
     }
 
     .bd-button.bd-button-danger {

@@ -5,7 +5,7 @@
 // https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/DisplayServersAsChannels
 
 .styledGuildsAsChannels-DNHtg_ {
-    .container_c48ade {
+    .container__5e434 {
         &::before {
             width: $channels-width + $channels-width + $sidebar-border-width;
         }
@@ -17,12 +17,12 @@
 
     .wrapper_ef3116 {
         // Unread pill
-        .wrapper_fd07a3 {
+        .wrapper__58105 {
             transform: none;
         }
 
         .circleIconButton__5bc7e,
-        .expandedFolderBackground__48112 .folder__48112,
+        .folderGroupBackground__48112 .hiddenVisually_b18fe2,
         .guildsError__32e67,
         .placeholderMask__87847,
         .wrapper__8436d {
