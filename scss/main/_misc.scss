@@ -53,3 +53,24 @@
 .headerBarInner_dc1a41:after {
     background: transparent;
 }
+
+
+/* Old User Panel */
+.panels__5e434 {
+    left: calc(var(--custom-guild-list-width) + 2*5px) !important;
+    width: calc(100% - var(--custom-guild-list-width) - 2*5px) !important;
+}
+
+.guilds__5e434 {
+    margin-bottom: 0px;
+} 
+
+.wrapper_ef3116 {
+  mask: none;
+  -webkit-mask: none;
+}
+
+/* Chat input */
+.form_f75fb0, .formWithLoadedChatInput_f75fb0 {
+    margin: 20px;
+}
