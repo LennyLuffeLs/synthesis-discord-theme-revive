@@ -3,20 +3,19 @@
 
 // Channels sidebar
 .sidebar__5e434 {
-    margin: 0px;
-    border: 5px solid rgb(var(--synth-color-foreground));
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgb(var(--synth-color-foreground)) !important;
+    margin: $sidebar-spacing 0;
+
+    &::after {
+        background: transparent;
+    }
 
     // Header
     .header_f37cb1 {
         box-shadow: none;
     }
 
-    .wrapper_ef3116, .privateChannels_e6b769, .scroller__99e7c, 
-    .panels__5e434, 
-    .container__2637a, .chat_f75fb0, .chatContent_f75fb0, .chatGradient__36d07,
-    .container_c8ffbb, .members_c8ffbb {
+    .clickable_f37cb1 .header_f37cb1:hover,
+    .selected_f37cb1 .header_f37cb1 {
         background-color: transparent;
     }
 

@@ -4,10 +4,8 @@
 
 // Servers sidebar
 .guilds__5e434 {
-    margin: 0px;
-    border: 5px solid rgb(var(--synth-color-foreground));
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgb(var(--synth-color-foreground)) !important;
+    margin-left: $sidebar-spacing;
+    @include box.orange;
 
     .platform-osx & .scroller_ef3116,
     .platform-win & .scroller_ef3116 {
