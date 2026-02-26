@@ -18,6 +18,7 @@
 
 // Various views
 .appMount__51fd7 {
+
     .container__0b563,
     .container_c2efea,
     .themed__9293f,
@@ -54,23 +55,29 @@
     background: transparent;
 }
 
-
-/* Old User Panel */
-.panels__5e434 {
-    left: calc(var(--custom-guild-list-width) + 2*5px) !important;
-    width: calc(100% - var(--custom-guild-list-width) - 2*5px) !important;
+// Background
+.wrapper_ef3116,
+.privateChannels_e6b769,
+.scroller__99e7c,
+.panels__5e434,
+.container__2637a,
+.chat_f75fb0,
+.channelTextArea_f75fb0,
+.chatContent_f75fb0,
+.chatGradient__36d07,
+.members_c8ffbb,
+.theme-dark .children__9293f:after {
+    background: transparent;
 }
 
-.guilds__5e434 {
-    margin-bottom: 0px;
-} 
-
-.wrapper_ef3116 {
-  mask: none;
-  -webkit-mask: none;
+// User profile next to DM
+.user-profile-sidebar,
+.inner_c0bea0,
+.outer_c0bea0 {
+    border-radius: calc($sidebar-spacing - $sidebar-border-width);
 }
 
-/* Chat input */
-.form_f75fb0, .formWithLoadedChatInput_f75fb0 {
-    margin: 20px;
+.mask__68edb {
+    border-top-left-radius: calc($sidebar-spacing - $sidebar-border-width);
+    border-top-right-radius: calc($sidebar-spacing - $sidebar-border-width);
 }

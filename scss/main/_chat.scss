@@ -135,6 +135,7 @@
 
         // Attachments
         .channelAttachmentArea_b77158 {
+
             // Options bar
             .wrapper_f7ecac {
                 @include box.orange-small;
@@ -183,4 +184,19 @@
     .stickerIconOffset_d4ced7 {
         @include box.orange-small;
     }
+}
+
+// Chat input
+.form_f75fb0,
+.formWithLoadedChatInput_f75fb0 {
+    margin: $size-m;
+    margin-top: - 0.5 * $size-m;
+}
+
+.channelTextArea_f75fb0 {
+    border-radius: $size-m;
+}
+
+.themedBackground__74017 {
+    background: rgba(0, 0, 0, 0.3);
 }
