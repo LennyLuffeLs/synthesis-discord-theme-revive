@@ -28,7 +28,7 @@
 
 ***A vibrant neon synthwave Discord theme.***
 
-| Without background                              | With background                                                     |
+| Without background                               | With background                                                     |
 | ----------------------------------------------- | ------------------------------------------------------------------- |
 | ![Synthesis applied to Discord][backgroundless] | ![Synthesis with background image applied to Discord][backgrounded] |
 
